@@ -1,4 +1,5 @@
 $(function(){
+
     $.ajax({
         url: "./data/db.json",
         success: function(rs){
@@ -21,6 +22,50 @@ $(function(){
               }
            }
            $('.pr-category').html(link);
+           $('.category-subnav-view').html(link);
+           
+
         }
       });
-});
+
+      $.get("data/slide.json", function(rs){
+         const img = rs.carousel;
+         let imgs = '';
+         for(let i=0; i< img.length; i++){
+            imgs += `<div class='text-center'><img src="images/${img[i]}" alt="{img[i]}"></div>`;
+         }
+         $('.mySlick').prepend(imgs).slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            autoplay: true,
+            autoplaySpeed: 5000
+          });
+      });
+
+      $.get("data/new.json", function(rs){
+         const list = rs.newlist;
+         let newbox = '';
+         for(let i= 0; i < list.length; i++){
+            newbox += `
+            <div class="col-md-3">
+               <div class="card">
+                  <a href="#" class="card-img">
+                     <img class="card-img-top" src="${list[i].img}" alt="${list[i].num}">
+                  </a>
+                  <a href="#" class="card-body">
+                     <h5 class="mt-4">${list[i].title}</h5>
+                     <P>${list[i].text}</P>
+                  </a>
+               </div>
+            </div>
+            `;
+         }
+         console.log(newbox);
+         $('#myList').html(newbox);
+         
+      });
+
+}); //jquery;

@@ -4,10 +4,16 @@ $(function(){
         $(this).find('.sub-cate').fadeIn();
     })
     .on("mouseleave",'.pr-category>li', function(){
-        $('.sub-cate').fadeOut();
+        $('.pr-category>li>.sub-cate').fadeOut();
     })
 
-//    $('.pr-catefory>li').hover(function(){
-//        $(this).find('.sub-cate').fadeToggle();
-//    });
+   $('.category')
+   .mouseenter(function(){
+       $(this).find('.category-subnav').css('display','flex');
+   }).mouseleave(function(){
+       $(this).find('.category-subnav').css('display','none');
+
+   });
 });
+
+
