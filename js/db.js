@@ -50,10 +50,10 @@ $(function(){
          let newbox = '';
          for(let i= 0; i < list.length; i++){
             newbox += `
-            <div class="col-md-3">
+            <div class="col-md-3 mb-5">
                <div class="card">
-                  <a href="#" class="card-img">
-                     <img class="card-img-top" src="${list[i].img}" alt="${list[i].num}">
+                  <a href="detail.jsp?num=${list[i].num}" class="card-img">
+                     <img src="${list[i].img}" class="card-img-top" alt="이미지 ${list[i].num}">
                   </a>
                   <a href="#" class="card-body">
                      <h5 class="mt-4">${list[i].title}</h5>
@@ -63,9 +63,37 @@ $(function(){
             </div>
             `;
          }
-         console.log(newbox);
-         $('#myList').html(newbox);
-         
+        // console.log(newbox);
+         $('#newpd').html(newbox);
+     });
+
+         $.get("data/list.json", function(list){
+            let lists = "";
+            list.forEach(function(item){
+               lists += `
+               <div class="col-md-3 mb-5">
+                <div class="card">
+                    <a href="detail.jsp?num=${item.num}" class="card-img">
+                    <img class="card-img-top" src="${item.img}" alt="${item.img}">
+                    </a>
+                    <a href="#" class="card-body">
+                        <h5 class="mt-4 pb-2 border-bottom">OFFICE LOOK
+                            <span class="badge badge-danger">NEW</span>
+                        </h5>
+                        <P class="desc">${item.title}</P>
+                        <p class="price">
+                            <span class="or">100,000원</span>
+                            <span>80,000원</span>
+                        </p>
+                    </a>
+                </div>
+            </div>
+               `;
+            });
+            
+          
+       
+         $('#pdlist').html(lists);
       });
 
 }); //jquery;
