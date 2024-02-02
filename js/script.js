@@ -12,8 +12,14 @@ $(function(){
        $(this).find('.category-subnav').css('display','flex');
    }).mouseleave(function(){
        $(this).find('.category-subnav').css('display','none');
-
    });
+
+   $('.listview').click(function(e){
+    e.preventDefault();
+    const view = $(this).data("view");
+    alert(view);
+
+   })
 });
 
 
