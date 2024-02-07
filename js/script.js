@@ -29,10 +29,14 @@ $(function(){
     });
     
     $('.category')
-    .mouseenter(function(){
+    .click(function(){
+      if($(this).find('.category-subnav').css('display')=='none'){
        $(this).find('.category-subnav').css('display', 'flex');
-    }).mouseleave(function(){
-       $(this).find('.category-subnav').css('display', 'none');
+    }else{
+      $(this).find('.category-subnav').css('display', 'none');
+
+    }
+   
     });
 
    $('.listview').click(function(e){
