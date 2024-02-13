@@ -10,13 +10,18 @@ $(function(){
              'width': '100%',
              'zIndex':1000
           }).addClass("fixed");
+          $('.category-subnav').css('backgroundColor','rgba(255,255,255,0.8)');
+          $('.detail').css('margin-top', '200px');
+
        }else{
          $('header').css({
             'position': 'static',
             'backgroundColor': 'rgba(255,255,255)',
             'top': 0,
             'width': '100%'
-         }).removeClass('fixed');        
+         }).removeClass('fixed');  
+         $('.category-subnav').css('backgroundColor','rgba(255,255,255,0.8)');
+          $('.detail').css('margin-top', '200px');      
        } 
     });
 
@@ -32,8 +37,11 @@ $(function(){
     .click(function(){
       if($(this).find('.category-subnav').css('display')=='none'){
        $(this).find('.category-subnav').css('display', 'flex');
+       $(this).addClass('category-act');
+
     }else{
       $(this).find('.category-subnav').css('display', 'none');
+      $(this).removeClass('category-act');
 
     }
    

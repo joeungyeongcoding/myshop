@@ -213,6 +213,10 @@ input.search{
 nav.global{
     box-shadow:0 10px 10px 0 rgba(0,0,0,0.05);
 }
+.category-parent{
+    position:relative;
+}
+
 .category{
     line-height:50px;
     display:block;
@@ -220,9 +224,10 @@ nav.global{
     width:50px;
     height:50px;
     text-align:center;
-    position:relative;
+    
 }
-.category:hover{
+.category:hover,
+.category-act{
     background-color:var(--dark-color);
 }
 .category:hover>a{
@@ -231,6 +236,7 @@ nav.global{
 .category-subnav{
     position:absolute;
     width: 1450px;
+    max-width: 100%;
     height:600px;
     z-index:101;
     background:#fff;
@@ -338,8 +344,7 @@ ul.global-nav{
         padding-right: 10px;
     }
     .brand {
-        font-size: 25px;
-        
+        font-size: 25px;        
     }
     .global {
         border-top: none;
@@ -348,7 +353,6 @@ ul.global-nav{
     .global-nav {
         display: none;
     }
-
     .category {
         margin-left: 6px;
     }
@@ -356,12 +360,24 @@ ul.global-nav{
         font-size: 25px;
     }
     .category-subnav {
-        flex-direction: column;
+        flex-direction: column;       
     }
     .category-subnav-view {
         flex-direction: column;
+        width: 100%;
+    }
+    .category-subnav-view>li {
+        width: 100%;        
+    }
+    .category-subnav-view>li a,
+    .global-nav-view a{
+        padding: 8px 10px;
+    }
+    .global-nav-view {
+        width: 100%;
     }
 }
+
 /*********** HERO **************/
 .hero{
     overflow:hidden;
@@ -369,6 +385,9 @@ ul.global-nav{
 .mySlick img{
     margin-left:auto;
     margin-right:auto;
+    object-fit: contain;
+    width: 100%;
+    height: 500px;
 }
 .slick-dots {
     bottom: 10px;
@@ -809,7 +828,6 @@ input[type=number].quantity {
     margin-top: 15px;
     margin-bottom: 50px;
     padding: 15px;
-    background-color: #fcedf3;
     transition: all 300ms;
 }
 .btn-line:hover,
