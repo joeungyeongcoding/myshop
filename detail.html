@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>myShop</title>
+
+<!--Mobile-->
+<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+
+<link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+<meta name="description" content="java를 이용한 쇼핑몰 연습">
+<meta name="keywords" content="html, css, javascript, bootstrap, java">
+<meta name = "author" content="eungyeong Jo">
+
+<!--stylesheet -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/slick-theme.css">
+<link rel="stylesheet" href="css/root.css">
+<link rel="stylesheet" href="css/style.css">
+
+<!--javascript-->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/db.js"></script>
+<script src="js/detail.js"></script>
+
+</head>
+<body>
+<header>
+    <h1 class="brand">MY SHOPPING MALL</h1>           
+        </div>
+    </div><!--container-max-->
+    <nav class="global">
+        <div class="container-max">
+            <div class="row justify-content-between category-parent">
+                <div class="category">
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+                <div class="category-subnav">
+                    <ul class="category-subnav-view">
+                    </ul>
+                    <ul class="global-nav-view">
+                        <li><a href="#">BEST리뷰</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Q&A</a></li>
+                        <li><a href="#">배송조회</a></li>
+                    </ul>
+                </div>
+                </div>
+                <ul class="nav pr-category justify-content-between">
+                    <li><a href="#">new</a></li>
+                    <li><a href="#">빅사이즈</a></li>
+                    <li><a href="#">원피스</a></li>
+                    <li><a href="#">아우터</a></li>
+                    <li><a href="#">상의</a></li>
+                    <li><a href="#">하의</a></li>
+                    <li><a href="#">new</a></li>
+                </ul>
+                <ul class="nav global-nav justify-content-between">
+                    <li><a href="#">BEST리뷰</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">QandA</a></li>
+                    <li><a href="#">배송조회</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section id="detail" class="detail">
+    <div class="container">
+        <div class="d-flex justify-content-end align-items-center pt-5">
+           <ul class="breadcrumb">
+             <li class="breadcrumb-item"><a href="#">home</a></li>
+             <li class="breadcrumb-item"><a href="#">Outer</a></li>
+             <li class="breadcrumb-item font-weight-bold">코트&바바리</li>
+           </ul>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-right mb-5 pb-1 border-bottom">
+                 <span class="badge badge-danger">new</span>
+            </div>
+            <div class="col-md-6 pr-md-5">
+               <div class="img-box">
+                 <img src="images/pd/109.jpg" alt="001" />
+               </div>
+               <div class="img-thumb-box">
+                 <img src="images/pd/109.jpg" alt="001">
+                 <img src="images/pd/110.jpg" alt="002">
+                 <img src="images/pd/111.jpg" alt="003">
+                 <img src="images/pd/112.jpg" alt="004">
+                 <img src="images/pd/109.jpg" alt="001">
+                 <img src="images/pd/110.jpg" alt="002">
+               </div>
+            </div>
+            <!--상품정보-->
+            <div class="col-md-6 pl-md-5 pr-list">
+                <form name="detail-form" method="post">
+                    <input type="hidden" name="title" id="title" value="지그재그 니트 후드 덕다운 롱 패딩">
+                    <input type="hidden" name="prcode" id="prcode" value="P00103EEA" />
+                    <input type="hidden" name="prprice" id="prprice" value="140000" />
+                    <input type="hidden" name="reserves" id="reserves" value="700" />
+                    <input type="hidden" name="delivery" id="delivery" value="5000" />
+                    <input type="hidden" name="totalprice" id="totalprice"/>
+               <h1>지그재그 니트 후드 덕다운 롱 패딩 
+                <span class="badge badge-primary">hot</span>
+                <span class="badge badge-danger">new</span>
+               </h1>
+               <p>너무 두껍지도않고 가벼운데 따땃한 겨울 오리털 롱패딩!
+                 고급스럽고
+               </p>
+               <ul class="ul-pr-list"> 
+                  <li><label class="title-label">상품코드</label> P00103EEA</li>
+                  <li><label class="title-label">판매가</label> 150,000원</li>
+                  <li><label class="title-label">할인판매가</label> 140,000원</li>
+                  <li><label class="title-label">적립금</label> 700원 [20만원이상 최대 <span>5천원</span>]</li>
+                  <li><label class="title-label">배송비</label> 5,000원</li>
+                  <li class="line colors"><label class="title-label">컬러</label>
+                        <input type="radio" name="color" id="black" data-color="0" data-colorname="검정" value="black">
+                        <label for="black" class="black"></label>
+                        <input type="radio" name="color" id="pink" data-color="1000" data-colorname="핑크" value="pink">
+                        <label for="pink" class="pink"></label>
+                        <input type="radio" name="color" id="blue" data-color="0" data-colorname="파랑" value="blue">
+                        <label for="blue" class="blue"></label>
+                        <input type="radio" name="color" id="red" data-color="0" data-colorname="빨강" value="red">
+                        <label for="red" class="red"></label>
+                        <p class="selected">색상을 선택하세요</p>
+                  </li>
+                  <li class="line"><label class="title-label">사이즈</label>
+                    <select class="size" name="size" disabled>
+                        <option value="">사이즈선택</option>
+                        <option value="m" data-size="0">미디움</option>
+                        <option value="xs" data-size="5000">엑스스몰</option>
+                        <option value="s" data-size="0">스몰</option>
+                        <option value="l" data-size="0">라지</option>
+                        <option value="xl" data-size="5000">엑스라지</option>
+                    </select>          
+                  </li>
+             <!-- <li class="line">
+                    <label>추가구성</label>
+                  </li> -->
+               </ul>
+               <div class="t-price">
+                   <div class="addquantity">
+                   </div>
+                   <div class="totalmoney text-right border-top mt-2 pt-3">
+                      <!-- 총 상품금액(수량) : <strong>123,000원</strong>(1개) -->
+                   </div>
+                   <div class="btnbox">
+                      <button type="submit" id="submit" class="btn btn-detail" disabled><i class="ri-shopping-cart-fill"></i>주문하기</button>
+                      <button type="button" id="cart" class="btn btn-line btn-left" disabled><i class="ri-shopping-bag-3-line"></i>ADD TO CART</button>
+                      <button type="button" id="wish" class="btn btn-line btn-right"><i class="ri-heart-fill"></i>WISH LIST</button>
+                   </div>
+               </div>
+            </form>
+            </div>
+            <!-- /상품정보-->
+        </div>
+    </div>
+
+    <div class="container mt-4 pt-4 border-top">
+
+    <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#review">상품상세정보</a></li>
+    <li><a data-toggle="pill" href="#review">구매후기</a></li>
+    <li><a data-toggle="pill" href="#qna">상품문의</a></li>
+    <li><a data-toggle="pill" href="#menu3">구매가이드</a></li>
+  </ul>
+  
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active show">
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+  </div>
+</div>
+    </div>
+    </section>
+ 
+</section>
+<!-- service -->
+<section id="service" class="service">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <h4>CUSTOMER CENTER <span class="tel">031-0000-0000</span></h4>
+                <p>평일 오전 10:00 ~ 오후 5:00 / 점심시간 오후 12:00 ~ 오후 1:00 / 토, 일, 공휴일 휴무</p>
+                <h4>KAKAOTALK <a href="#" class="kakao"><i class="ri-kakao-talk-fill"></i></a></h4>
+                <p>평일 오전 10:00 ~ 오후 5:00 / 점심시간 오후 12:00 ~ 오후 1:00 / 토, 일, 공휴일 휴무</p>
+                <h4>ACCOUNT INFO</h4>
+                <div class="bank-box">
+                <span class="bank">우리 0000-101-335115</span>
+                <span class="bank">농협 0000-01-057383</span>
+                <span class="bank">국민 000000-04-138751</span>
+                <span class="bank">신한 000-024-368599</span>
+                <span class="bank">기업 000-053616-01-012</span>
+                <span class="bank">주식회사 '길동네트워크'</span>
+                </div>
+                <h4>RETURN / EXCHANGE</h4>
+                <P>CJ대한통운 : 경기도 김포시 000000, 1층 CJ대한통운 '길동네트워크'</P>
+                <P>한진택배 : 경기도 김포시 0000 00-00, 702호 한진택배 '길동네트워크'</P>
+
+                
+            </div>
+            <div class="col-md-7">
+                <div class="linebox">
+                    <h4>COMPANY</h4>
+                    <p>주식회사 엠제이앤엠</p>
+                    대표 문인기
+                    <h4>ADDRESS</h4>
+                    <p>04797 서울특별시 성동구 아차산로11길 18 (성수동2가) 쁘렝땅빌딩 5층</p>
+                    <p>BUSINESS LICENSE 201-86-05562</p>
+                    <p>[사업자정보확인]</p>
+                    <p>MAIL-ORDER-LICENSE 2021-서울성동-02012</p>
+                    <p>EMAIL dabagirl@naver.com</p>
+
+                    <div class="df-escrow-inicis" onclick="window.open('https://www.inicis.com/','escrow','width=500,height=640,scrollbars=auto')">
+                        <p>KG에스크로<br>가입사실확인</p>
+
+                    </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- footer -->
+<footer>
+    <div class="container">
+        <p class="text-center">
+            Copyright &copy; eungyeong Jo's all right reserved. maked 2024.</p>
+    </div>
+
+</footer>
+
+<div class="remotecontrol">
+    <a href="#" class="tops"><i class="ri-arrow-up-s-line"></i></a>
+    <a href="#" class="bottoms"><i class="ri-arrow-down-s-line"></i></a>
+</div>
+</div>
+</body>
+</html>
