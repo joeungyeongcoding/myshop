@@ -153,6 +153,12 @@
             $('.totalmoney').html("");
           }   
       });
+
+      //본문 상세보기 스크립트
+      $('.nav-pills li').click(function(){
+         $('.nav-pills>li').removeClass('active');
+         $(this).addClass('active');
+      })
    });
    
    function totalMoney(delivery){
