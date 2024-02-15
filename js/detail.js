@@ -102,7 +102,7 @@
       });
    
    
-   
+
      // $('#qup').click(function(){
       $(document).on('click', ".qup", function(){
          let quantity = Number($(this).parent().prev().val()); //수량가져오기
