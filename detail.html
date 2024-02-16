@@ -46,9 +46,56 @@
 <script src="js/detail.js"></script>
 
 </head>
-<body>
+<body id="body">
+<!-- HEADER --> 
 <header>
-    <h1 class="brand">MY SHOPPING MALL</h1>           
+    <div class="container-max">
+        <div class="row">
+          <nav class="top d-md-flex d-none justify-content-between">
+              <ul class="nav">
+                  <li><a href="#">login</a></li>
+                  <li><a href="#">join us</a>
+                     <div class="msgbox">
+                         +10,000 P
+                     </div>
+                  </li>
+                  <li><a href="#">cart <span>0</span></a></li>
+                  <li><a href="#">order</a></li>
+                  <li class="mem"><a href="#">my page</a>
+                      <ul class="subnav">
+                          <li><a href="#">관심상품</a></li>
+                          <li><a href="#">주문조회</a></li>
+                          <li><a href="#">적립금</a></li>
+                          <li><a href="#">예치금</a></li>
+                          <li><a href="#">마이쿠폰</a></li>
+                          <li><a href="#">내가쓴글</a></li>
+                      </ul>
+                  </li>
+                  <li class="mem"><a href="#">community</a>
+                      <ul class="subnav">
+                          <li><a href="#">notice</a></li>
+                          <li><a href="#">q&a</a></li>
+                          <li><a href="#">review</a></li>
+                          <li><a href="#">event</a></li>
+                          <li><a href="#">자주묻는질문</a></li>
+                      </ul>
+                  </li>
+              </ul>
+  
+              <ul class="right-nav nav">
+                  <li><a href="#" class="facebook"><i class="ri-facebook-fill"></i></a></li>
+                  <li><a href="#" class="instagram"><i class="ri-instagram-line"></i></a></li>
+                  <li><a href="#" class="kakao"><i class="ri-kakao-talk-fill"></i></a></li>
+                  <li><a href="#" class="youtube"><i class="ri-youtube-fill"></i></a></li>
+                  <li>
+                      <form name="searchform" class="searchform" id="searchform">
+                          <input type="search" name="search" class="search" placeholder="🤦‍♀️🤦‍♂️고퀄리티 쇼핑몰!👍👍">
+                          <button type="button" class="btn btn-link btn-search"><i class="ri-search-line"></i></button>
+                      </form>
+                  </li>
+              </ul>
+          </nav>    
+    <h1 class="brand"><a href="#">MY SHOPPING MALL</a></h1>           
         </div>
     </div><!--container-max-->
     <nav class="global">
@@ -177,36 +224,123 @@
             <!-- /상품정보-->
         </div>
     </div>
+   <!-- 자세히 보기 -->
+        <div class="container shop-contents mt-4 pt-4 mt-4 pt-4 border-top">
+            <ul class="nav nav-pills">
+                <li class="active"><a data-toggle="pill" href="#view">상품상세정보</a></li>
+                <li><a data-toggle="pill" href="#review">구매후기</a></li>
+                <li><a data-toggle="pill" href="#qna">상품문의</a></li>
+                <li><a data-toggle="pill" href="#guide">구매가이드</a></li>
+            </ul>
+                
+            <div class="tab-content py-5">
 
-    <div class="container mt-4 pt-4 border-top">
+                <div id="view" class="tab-pane fade in active show">
+                    <h3>HOME</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                    
+                <div id="review" class="tab-pane fade">
+                    <h3>구매후기</h3>
+                    <div class="row pb-4 border-bottom">
+                        <div class="col-md-6 text-center">
+                            <h2>평균별점</h2>
+                            <div class="star">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                            <p class="score">4.1</p>
+                        </div>
 
-    <ul class="nav nav-pills">
-    <li class="active"><a data-toggle="pill" href="#review">상품상세정보</a></li>
-    <li><a data-toggle="pill" href="#review">구매후기</a></li>
-    <li><a data-toggle="pill" href="#qna">상품문의</a></li>
-    <li><a data-toggle="pill" href="#menu3">구매가이드</a></li>
-  </ul>
-  
-  <div class="tab-content">
-    <div id="home" class="tab-pane fade in active show">
-      <h3>HOME</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div id="menu1" class="tab-pane fade">
-      <h3>Menu 1</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div id="menu2" class="tab-pane fade">
-      <h3>Menu 2</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-    </div>
-    <div id="menu3" class="tab-pane fade">
-      <h3>Menu 3</h3>
-      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    </div>
-  </div>
-</div>
-    </div>
+                        <div class="col-md-6 text-center">
+                            <h2>별점비율</h2>
+                            
+                            <div class="ratio-box">
+                                <div>
+                                    <div class="box-line">
+                                        <div class="box-line-color" style="height:76%;"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="box-line">
+                                        <div class="box-line-color" style="height:17%;"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="box-line">
+                                        <div class="box-line-color" style="height:8%;"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="box-line">
+                                        <div class="box-line-color" style="height:0%;"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="box-line">
+                                        <div class="box-line-color" style="height:5%;"></div>
+                                    </div>
+                                </div>     
+                            </div> <!--ratio-box-->
+
+                        </div><!--별점비율col-->
+                        
+                    </div> <!--row-->
+
+                        <div class="review-photo">
+                            <div class="img">
+                                <a href="#"><img src="images/pd/015.jpg" alt="015" /></a>
+                            </div>
+                            <div class="img">
+                                <a href="#"><img src="images/pd/016.jpg" alt="015" /></a>
+                            </div>
+                            <div class="img">
+                                <a href="#"><img src="images/pd/017.jpg" alt="015" /></a>
+                            </div>
+                            <div class="img">
+                                <a href="#"><img src="images/pd/018.jpg" alt="015" /></a>
+                            </div>
+                            <div class="img">
+                                <a href="#"><img src="images/pd/019.jpg" alt="015" /></a>
+                            </div>
+                            <div class="img">
+                                <a href="#"><img src="images/pd/020.jpg" alt="015" /></a>
+                            </div>
+                            <div class="img">
+                                <a href="#"><img src="images/pd/021.jpg" alt="015" /></a>
+                            </div>
+                            <div class="img">
+                                <a href="#"><img src="images/pd/022.jpg" alt="015" /></a>
+                            </div>
+                            <div class="img">
+                                <a href="#"><img src="images/pd/023.jpg" alt="015" /></a>
+                            </div>
+                            <div class="img">
+                                <a href="#"><img src="images/pd/024.jpg" alt="015" /></a>
+                            </div>
+                            <div class="img">
+                                <a href="#"><img src="images/pd/025.jpg" alt="015" /></a>
+                            </div>
+                            <div class="img">
+                                <a href="#"><img src="images/pd/026.jpg" alt="015" /></a>
+                            </div>
+                        </div> <!--review-photo-->    
+                </div><!--id review-->        
+
+                <div id="qna" class="tab-pane fade">
+                    <h3>Menu 2</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                </div>
+                <div id="guide" class="tab-pane fade">
+                    <h3>Menu 3</h3>
+                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                </div>
+
+            </div><!--tab-content-->
+        </div> <!--container shop-contents-->
     </section>
  
 </section>
