@@ -1,16 +1,7 @@
 body{
     font-family: 'Noto Sans KR', sans-serif;
     color: var(--primary-color);
-    font-size:16px;
-}
-body::-webkit-scrollbar{
-    width:8px;
-}
-body::-webkit-scrollbar-track{
-    background-color:pink;
-}
-body::-webkit-scrollbar-thumb{
-    background-color:#dd2a7b;
+    font-size: 16px;
 }
 a,a:link{
     text-decoration:none;
@@ -21,38 +12,19 @@ a:hover{
 }
 .container-max{
     width: 1580px;
-    max-width:100%;
-    padding-left:80px;
-    padding-right:80px;
-    margin-left:auto;
-    margin-right:auto;
+    max-width: 1440px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 @media (min-width: 1200px){
     .container, .container-lg, .container-md, .container-sm, .container-xl {
         max-width: 1440px;
     }
 }
-/*################ header ######################*/
-
-header>.container-max>.row{
-    flex-flow:column nowrap;
-}
-header.fixed>.container-max>.row{
-    flex-flow:row nowrap;
-}
-header.fixed .brand{
-    order:1;
-    font-size:25px;
-    margin-top:5px;
-    margin-right:30px;
-    width:300px;
-}
-header.fixed nav.top{
-    order:2;
-    width: calc(100% - 300px);
-}
-
-/*################ TOP NAVIGATION ##############*/
+/*################## TOP NAVIGATION ###########*/
 .top ul.nav{
     text-transform: uppercase;
     font-size:12px;
@@ -64,6 +36,7 @@ header.fixed nav.top{
     position:relative;
 }
 .top ul.nav>li span{
+<<<<<<< HEAD
     display:inline-block;
     min-width:20px;
     background:#ddd;
@@ -73,6 +46,13 @@ header.fixed nav.top{
 .global{
     border-top:1px solid var(--gray-color);
     border-bottom:1px solid var(--gray-color);
+=======
+    display: inline-block;
+    min-width: 20px;
+    background: #ddd;
+    border-radius: 50%;
+    text-align: center;   
+>>>>>>> 3537c8ca6404df9f14a8b234286b8fe1c5996ef5
 }
 .mem{
       font-weight: 700;
@@ -194,6 +174,7 @@ input.search{
     font-size:18px;
 }
 .btn-search:hover{
+<<<<<<< HEAD
     text-decoration:none;
 }
 
@@ -700,6 +681,17 @@ footer{
     font-size:15px;
     font-weight:400;
     margin-bottom:30px;
+=======
+    text-decoration: none;
+}
+/*################## BRAND ###########*/
+.brand{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+>>>>>>> 3537c8ca6404df9f14a8b234286b8fe1c5996ef5
 }
 .pr-list h1 span:first-child{
     margin-left:30px;

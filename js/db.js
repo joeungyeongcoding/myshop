@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $(function(){
 
     $.ajax({
@@ -116,3 +117,5 @@ $(function(){
       });
 
  //jquery;
+=======
+>>>>>>> 3537c8ca6404df9f14a8b234286b8fe1c5996ef5
