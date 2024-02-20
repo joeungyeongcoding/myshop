@@ -169,7 +169,43 @@
             centerMode: true
             });
       });
-          
+
+      //리뷰팝업창
+
+      // $('.list-group-item .img').click(function(){
+      //    $('.rp').fadeIn();
+      // })
+
+      // $('.rp').click(function(){
+      //    $('.rp').fadeOut();
+      // })
+
+      $('.imgs').click(function(e){
+         e.preventDefault(); //#때문에 상단으로 올라가는 링크기능을 중지시킴
+         const src = $(this).find('img').attr('src'); //get
+         // console.log(src);
+         $('.imgbox').find('img').attr('src',src).attr('alt',src); //set
+        // $('.rp').find('.imgbox').html(img);
+         $('.rp').fadeIn();
+
+      });
+
+      $(document).mouseup(function(e){
+         if($('.rp').has(e.target).length === 0){
+            $('.rp').fadeOut();
+         }
+         //console.log("타겟값: " , e.target);
+         //console.log("타겟번호: " + $('.rp').has(e.target).length);
+
+         //if($(e.target).hasClass('.rp')){
+         //   $('.rp').fadeOut();
+         //}
+      });
+
+      $('.rp-close').click(function(){
+         $('.rp').fadeOut();
+      });
+       
    });
 
    //리뷰 퍼센트 보기 함수
