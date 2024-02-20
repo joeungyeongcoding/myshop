@@ -208,6 +208,21 @@
        
    });
 
+   //슬릭생성
+   //function initializeSlick(){
+   //   $('.review-photo').slick({
+   //      slidesToShow: 8,
+   //      slidesToScroll: 1,
+   //      centerMode: true
+   //  });
+   //}
+
+   //슬릭삭제
+   //function destroySlick(){
+   //   $('.review-photo').slick('unslick');
+   //}
+
+
    //리뷰 퍼센트 보기 함수
    function viewReview(){
       $('.box-line-color').each(function(){
