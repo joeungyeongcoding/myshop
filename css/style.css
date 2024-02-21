@@ -1057,3 +1057,25 @@ ul.pddetail .pdtitle{
     width:150px;
     height:150px;
 }
+
+/**상품문의**/
+#qna th,
+#qna td {
+    padding: 10px;
+}
+#qna span {
+    margin-left: 5px;
+}
+.pagination a{
+    margin: 10px;
+    color: var(--gray-dark-color);
+    padding: 3px 10px;
+    border-radius: 50%;
+    transition: all 300ms;
+}
+.pagination a.active{
+    color: var(--primary-color);
+    font-weight: bold;
+    background-color: #ccc;
+    color: #fff;
+}

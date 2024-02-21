@@ -224,8 +224,19 @@
       $('.rp-close').click(function(){
          $('.rp').fadeOut();
       });
+
+
+      ///상세보기 pagination//
+      $('.pagination a').click(function(e){
+         e.preventDefault();
+         $('.pagination a').removeClass('active');
+         $(this).addClass('active');
+      })
        
-   });
+
+
+
+   }); //jquery
 
    //슬릭생성
    //function initializeSlick(){
