@@ -232,6 +232,13 @@
          $('.pagination a').removeClass('active');
          $(this).addClass('active');
       })
+
+      ///구매가이드 tab///
+      
+         $(".nav-tabs a").click(function(){
+           $(this).tab('show');
+         });
+    
        
 
 
